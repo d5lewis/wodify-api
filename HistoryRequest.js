@@ -1,7 +1,10 @@
 function loadWods() {
     let numDays = document.getElementById('numDays').value;
     let apiKey = document.getElementById('apiKey').value;
-    loadMultipleFormattedWODs(apiKey, "CrossFit TurnPoint", "Crossfit", numDays)
+    let location = document.getElementById('gymName').value;
+    let program = document.getElementById('program').value;
+
+    loadMultipleFormattedWODs(apiKey, location, program, numDays)
 }
 
 function loadFormattedWOD(apiKey, date, location, program) {
