@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <title>Wodify History Request</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<form action="#" name="requestForm" method="post" >
+    <table>
+        <tr>
+            <td>Number of Days: </td>
+            <td><label for="numDays"></label><input type="text" id="numDays" name="numDays"/></td>
+        </tr>
+        <tr>
+            <td>Number of Days: </td>
+            <td><label for="apiKey"></label><input type="text" id="apiKey" name="apiKey"/></td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="loadWods()" type="button">Submit</button>
+            </td>
+        </tr>
+    </table>
+    <br />
+    <div id="results" class="results"></div>
+</form>
+</body>
+<script src="HistoryRequest.js"></script>
+</html>
